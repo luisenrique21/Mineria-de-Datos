@@ -1,5 +1,5 @@
 import pandas as pd
-
+ 
 df = pd.read_csv('datos_limpios_premier_league_odds.csv')
 
 media = df[['ProbabilidadGanaLocal (1)', 'ProbabilidadEmpate (X)', 'ProbabilidadGanaVisitante (2)', 'GolesLocal', 'GolesVisita']].mean()
