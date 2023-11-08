@@ -16,7 +16,6 @@ X_local = promedio_probabilidad_local
 Y_local = promedio_goles_locales
 
 X_local = sm.add_constant(X_local)  # Agregar intercepto
-
 modelo_local = sm.OLS(Y_local, X_local).fit()
 
 print("Regresión lineal para Promedio de Probabilidades Gana Local vs. Promedio de Goles Locales:")
