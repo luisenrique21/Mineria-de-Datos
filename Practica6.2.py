@@ -3,7 +3,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 
 # Cargar tu conjunto de datos desde el archivo CSV
-df = pd.read_csv('datos_limpios_premier_league_odds.csv')  # Reemplaza 'tu_conjunto_de_datos.csv' con la ruta correcta
+df = pd.read_csv('datos_limpios_premier_league_odds.csv')  
 
 # Calcular el promedio de las probabilidades de ganar local (1) para cada equipo
 promedio_probabilidad_local = df.groupby('EquipoVisitante')['ProbabilidadGanaVisitante (2)'].mean()
